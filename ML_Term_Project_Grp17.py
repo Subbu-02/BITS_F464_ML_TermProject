@@ -17,7 +17,7 @@ digits = load_digits()
 sparse_pca = SparsePCA(n_components=60, alpha=0.1)
 sparse_pca.fit_transform(digits.data / 255)
 
-# Implementation of the Elastic Net int function spca
+# Implementation of the Elastic Net in function spca
 def spca(n_components, lambdas, ridge_alpha, max_iter, lim, data):
   '''
   n_components indicates the number of principal components to be extracted
